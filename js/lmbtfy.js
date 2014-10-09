@@ -18,7 +18,7 @@ $(document).ready(function (){
         }
     });
     if (!!window.location.search){
-        var kw = window.location.search.substr(1);
+        var kw = decodeURIComponent(window.location.search.substr(1));
         var $kw = $('#kw');
         var $instructions = $('#instructions');
         var $arrow = $('#arrow');
