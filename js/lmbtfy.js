@@ -31,6 +31,7 @@ $(document).ready(function (){
                 $instructions.text('2、输入你的问题');
                 $arrow.hide();
                 var $kw = $('#kw');
+                $kw.focus();
                 var i = 0;
                 var interval = setInterval(function (){
                     $kw.val(kw.substr(0,i));
