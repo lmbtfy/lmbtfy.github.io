@@ -23,12 +23,12 @@ $(document).ready(function (){
         var $instructions = $('#instructions');
         var $arrow = $('#arrow');
         setTimeout(function (){
-            $instructions.text('1、把鼠标放到输入框上');
+            $instructions.text('1、首先打开 baidu.com ');
             $arrow.show().animate({
                 left: $kw.offset().left + 10 + 'px',
                 top: ($kw.offset().top + $kw.height()/2) + 'px'
             }, 2000, function (){
-                $instructions.text('2、输入你的问题');
+                $instructions.text('2、然后输入你的问题');
                 $arrow.hide();
                 var $kw = $('#kw');
                 $kw.focus();
@@ -38,14 +38,14 @@ $(document).ready(function (){
                     i++;
                     if (i > kw.length){
                         clearInterval(interval);
-                        $instructions.text('3、按下“百度一下”按钮');
+                        $instructions.text('3、最后点击“百度一下”');
                         $arrow.show();
                         var $search = $('#search');
                         $arrow.animate({
                             left: $search.offset().left + $search.width()/2 + 'px',
                             top: $search.offset().top + $search.height()/2 + 'px'
                         }, 1000, function () {
-                            $instructions.html('<strong>这对你而言就是这么困难么？</strong>');
+                            $instructions.html('<strong>这对你来说很困难吗？</strong>');
                             setTimeout(function (){
                                 window.location = 'http://www.baidu.com/s?tn=lmbtfy.cn&ch=3&ie=utf-8&wd=' + encodeURIComponent(kw);
                             }, 2000);
