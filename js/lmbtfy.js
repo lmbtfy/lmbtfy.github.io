@@ -47,7 +47,7 @@ $(document).ready(function (){
                         }, 1000, function () {
                             $instructions.html('<strong>这对你来说很困难吗？</strong>');
                             setTimeout(function (){
-                                window.location = 'http://www.baidu.com/s?tn=lmbtfy.cn&ch=3&ie=utf-8&wd=' + encodeURIComponent(kw);
+                                window.location = 'http://www.baidu.com/s?tn=fdzh.org&ch=3&ie=utf-8&wd=' + encodeURIComponent(kw);
                             }, 2000);
                         })
                     }
